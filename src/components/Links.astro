@@ -1,0 +1,37 @@
+---
+import Github from './icons/Github.astro'
+import Linkedin from './icons/Linkedin.astro'
+import Cv from './icons/Cv.astro'
+
+const LINKS = [
+  {
+    icon: Github,
+    name: 'GitHub',
+    link: '',
+  },
+  {
+    icon: Linkedin,
+    name: 'Linkedin',
+    link: 'https://www.linkedin.com/in/ancel-guarayo-9b5b95267/',
+  },
+  {
+    icon: Cv,
+    name: 'CV',
+    link: 'downloadCV',
+  },
+];
+---
+<div>
+  <ul class="flex flex-row gap-12 text-lightGray">
+    {
+      LINKS.map((link) => (
+        <li class="rounded-full border border-opacity-30 py-3 px-4 border-lightGray">
+          <a href={link.link} class="flex flex-row gap-2 italic font-light">
+            <link.icon />
+            {link.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

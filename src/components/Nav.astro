@@ -9,31 +9,31 @@ const t = useTranslations(lang);
 
 ---
 <nav class="flex flex-row w-screen text-lightGray text-2xl font-opensans font-thin px-14 py-6">
-  <p>Ancel<br>Guarayo</p>
+  <a href=`/${lang}` class="hover:text-dirtyWhite transition-all delay-150">Ancel<br>Guarayo</a>
   <ul class="flex flex-row gap-20 flex-1 items-center justify-center text-lg">
-    <li class="hover:text-white hover:underline">
+    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
       <a href={`/${lang}/home/`}>
         {t("nav.home")}
       </a>
     </li>
-    <li class="hover:text-white hover:underline">
+    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
       <a href={`/${lang}/about/`}>
         {t("nav.about")}
       </a>
     </li>
-    <li class="hover:text-white hover:underline">
+    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
       <a href={`/${lang}/projects/`}>
         {t("nav.projects")}
       </a>
     </li>
-    <li class="hover:text-white hover:underline">
+    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
       <a href={`/${lang}/contacts/`}>
         {t("nav.contact")}
       </a>
     </li>
   </ul>
   <div class="flex flex-col">
-    <a href="/es/" class={`hover:underline ${lang === 'es' ? 'text-white underline' : 'text-lightGray'}`}>ES</a>
-    <a href="/en/" class={`hover:underline ${lang === 'en' ? 'text-white underline' : 'text-lightGray'}`}>EN</a>
+    <a href="/es/" class={`hover:underline ${lang === 'es' ? 'text-dirtyWhite underline' : 'text-lightGray hover:text-dirtyWhite transition delay-100'}`}>ES</a>
+    <a href="/en/" class={`hover:underline ${lang === 'en' ? 'text-dirtyWhite underline' : 'text-lightGray hover:text-dirtyWhite transition delay-100'}`}>EN</a>
   </div>
 </nav>

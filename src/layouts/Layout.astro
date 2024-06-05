@@ -1,6 +1,7 @@
 ---
 import { getLangFromUrl } from '../i18n/utils'
 import Nav from '../components/Nav.astro'
+import Header from '../components/Header.astro';
 
 interface Props {
 	title: string;
@@ -23,6 +24,7 @@ const lang = getLangFromUrl(Astro.url)
 	</head>
 	<body class="bg-blackBg">
 		<Nav/>
+		<Header />
 		<slot/>
 	</body>
 </html>

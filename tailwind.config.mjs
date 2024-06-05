@@ -5,7 +5,7 @@ export default {
 	theme: {
 		colors: {
 			'blackBg': '#121212',
-			'white': '#f5f5f5',
+			'dirtyWhite': '#f5f5f5',
 			'lightGray': '#A6A6A6',
 			'darkGray': '#3D3D3D',
 		},
