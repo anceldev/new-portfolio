@@ -49,6 +49,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Template
+[Portfolio Full-stack Developer](https://www.behance.net/gallery/199132655/Portfolio-Full-stack-Developer?tracking_source=search_projects|developer+portfolio&l=15)
+
+##  Fonts
+[Fira Code](https://fontsource.org/fonts/fira-code/install)
+[Open Sans](https://fontsource.org/fonts/open-sans)
