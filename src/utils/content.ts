@@ -14,26 +14,30 @@ export const content = {
       title: 'Work',
       experience: [
         {
-          years: '2022 -',
-          months: '1 year 5 months',
+          fromTo: '2022 -',
+          years: '1 year',
+          months: '5 months',
           company: 'ITHUB',
           job: 'Frontend developer | React & Vue',
         },
         {
-          years: '2021 - 2022',
+          fromTo: '2021 - 2022',
+          years: '',
           months: '8 months',
           company: 'VK Development Lab',
           job: 'Frontend developer | React',
         },
         {
-          years: '2020-2021',
+          fromTo: '2020 - 2021',
+          years: '',
           months: '9 months',
           company: 'SN Inc.',
           job: 'Fullstack developer | Javascript & Python',
         },
         {
-          years: '2018 - 2020',
-          months: '1 year 11 months',
+          fromTo: '2018 - 2020',
+          years: '1 year',
+          months: '11 months',
           company: 'Business Up',
           job: 'Fullstack developers | Javascript & Python',
         }
@@ -59,26 +63,30 @@ export const content = {
       title: 'Experiencia',
       experience: [
         {
-          years: '2022 -',
-          months: '1 año 5 meses',
+          fromTo: '2022 -',
+          years: '1 año',
+          months: '5 meses',
           company: 'ITHUB',
           job: 'Frontend developer | React & Vue',
         },
         {
-          years: '2021 - 2022',
+          fromTo: '2021 - 2022',
+          years: '',
           months: '8 meses',
           company: 'VK Development Lab',
           job: 'Frontend developer | React',
         },
         {
-          years: '2020-2021',
+          fromTo: '2020 - 2021',
+          years: '',
           months: '9 meses',
           company: 'SN Inc.',
           job: 'Fullstack developer | Javascript & Python',
         },
         {
-          years: '2018 - 2020',
-          months: '1 año 11 meses',
+          fromTo: '2018 - 2020',
+          years: '1 año',
+          months: '11 meses',
           company: 'Business Up',
           job: 'Fullstack developers | Javascript & Python',
         }
