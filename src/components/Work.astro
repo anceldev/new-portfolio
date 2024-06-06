@@ -1,0 +1,40 @@
+---
+import { getLangFromUrl } from "../i18n/utils";
+import { content } from "../utils/content";
+import '@fontsource-variable/fira-code';
+import '@fontsource-variable/open-sans';
+
+const lang = getLangFromUrl(Astro.url);
+const text = content[lang];
+---
+<div>
+  <h1
+    class="font-firacode text-right text-5xl font-semibold text-dirtyWhite lg:text-8xl"
+  >
+    {text.work.title}
+  </h1>
+  <div class="h-[1px] bg-darkGray"></div>
+  <ul>
+    {
+      text.work.experience.map(({ years, months, company, job }) => (
+        <>
+          <li class="flex flex-row items-center py-4 px-40">
+            <div class="size-1/6 text-lightGray font-opensans">
+              <p class="text-2xl">{years}</p>
+              <p class="text-lg">{months}</p>
+            </div>
+            <div class="flex flex-row size-5/6 text-dirtyWhite text-2xl items-center">
+              <h3 class="size-2/5 font-opensans font-light">{company}</h3>
+              <h3 class="size-3/5 font-firacode font-extralight">{job}</h3>
+            </div>
+          </li>
+          <div class="h-[1px] bg-darkGray" />
+        </>
+      ))
+    }
+  </ul>
+  <div class="flex flex-col items-end mt-8 mb-8 px-40 font-opensans space-y-2">
+    <h3 class="text-lightGray text-3xl font-light">{text.work.footer.title}</h3>
+    <p class="italic text-dirtyWhite text-2xl">{text.work.footer.duration}</p>
+  </div>
+</div>

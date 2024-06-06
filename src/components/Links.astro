@@ -22,12 +22,12 @@ const LINKS = [
 ];
 ---
 <div>
-  <ul class="flex flex-row gap-12 text-lightGray">
+  <ul class="flex flex-row flex-wrap gap-4 lg:gap-12 text-lightGray">
     {
       LINKS.map((link) => (
-        <li class="rounded-full border border-opacity-30 py-3 px-4 border-lightGray">
-          <a href={link.link} class="flex flex-row gap-2 italic font-light">
-            <link.icon />
+        <li class="rounded-full border border-opacity-30 w-min lg:w-auto py-3 px-6 border-lightGray">
+          <a href={link.link} class="flex flex-row gap-2 italic font-light hover:text-dirtyWhite transition delay-150">
+            <link.icon class="text-dirtyWhite" />
             {link.name}
           </a>
         </li>

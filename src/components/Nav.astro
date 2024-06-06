@@ -1,15 +1,18 @@
 ---
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 // Supports weights 300-700
-import '@fontsource-variable/fira-code';
-import '@fontsource-variable/open-sans';
+import "@fontsource-variable/fira-code";
+import "@fontsource-variable/open-sans";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
 ---
+
 <nav class="flex flex-row w-screen text-lightGray text-2xl font-opensans font-thin px-14 py-6">
-  <a href=`/${lang}` class="hover:text-dirtyWhite transition-all delay-150">Ancel<br>Guarayo</a>
+  <a href=`/${lang}` class="hover:text-dirtyWhite transition-all delay-150">
+    Ancel <br/>Guarayo
+  </a>
+
   <ul class="flex flex-row gap-20 flex-1 items-center justify-center text-lg">
     <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
       <a href={`/${lang}/home/`}>
@@ -33,7 +36,15 @@ const t = useTranslations(lang);
     </li>
   </ul>
   <div class="flex flex-col">
-    <a href="/es/" class={`hover:underline ${lang === 'es' ? 'text-dirtyWhite underline' : 'text-lightGray hover:text-dirtyWhite transition delay-100'}`}>ES</a>
-    <a href="/en/" class={`hover:underline ${lang === 'en' ? 'text-dirtyWhite underline' : 'text-lightGray hover:text-dirtyWhite transition delay-100'}`}>EN</a>
+    <a
+      href="/es/"
+      class={`hover:underline ${lang === "es" ? "text-dirtyWhite underline" : "text-lightGray hover:text-dirtyWhite transition delay-100"}`}
+      >ES</a
+    >
+    <a
+      href="/en/"
+      class={`hover:underline ${lang === "en" ? "text-dirtyWhite underline" : "text-lightGray hover:text-dirtyWhite transition delay-100"}`}
+      >EN</a
+    >
   </div>
 </nav>
