@@ -5,6 +5,7 @@ import Header from '../components/Header.astro';
 import About from '../components/About.astro';
 import Work from '../components/Work.astro';
 import Projects from '../components/Projects.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
 	title: string;
@@ -32,5 +33,6 @@ const lang = getLangFromUrl(Astro.url)
 		<Work />
 		<Projects />
 		<slot/>
+		<Footer/>
 	</body>
 </html>

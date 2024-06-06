@@ -88,6 +88,11 @@ export const content = {
           imgUrl: 'project3.png'
         },
       ],
+    },
+    contact: {
+      title: 'Contacts',
+      tel: '698 578 578',
+      mail: 'anceltests@gmail.com'
     }
   },
   es: {
@@ -179,6 +184,11 @@ export const content = {
           imgUrl: 'project3.png'
         },
       ],
+    },
+    contact: {
+      title: 'Contacto',
+      tel: '+35000000000',
+      mail: 'anceltests@gmail.com'
     }
   }
 }
