@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  technologies: string[];
+  description: string;
+  imgUrl: string;
+}
+const { title, technologies, description, imgUrl } = Astro.props;
+---
+
+<div class="flex flex-row my-36">
+  <div class="size-2/5 space-y-6">
+    <h1 class="text-dirtyWhite text-3xl font-firacode font-light">{title}</h1>
+    <ul class="flex flex-wrap">
+      {
+        technologies.map((tech) => (
+          <li class="border w-min rounded-full lg:w-auto py-3 px-6 border-darkGray text-dirtyWhite mx-2 my-2 text-xl font-light font-firacode">{tech}</li>
+        ))
+      }
+    </ul>
+    <p class="text-lightGray text-xl font-opensans">{description}</p>
+  </div>
+  <div class="size-3/5">
+    <img 
+    src={`../../public/images/${imgUrl}`} 
+    alt="project image" 
+    class="p-12">
+  </div>
+</div>
