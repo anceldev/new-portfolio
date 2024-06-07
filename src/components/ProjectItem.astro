@@ -1,11 +1,16 @@
 ---
+import ArrowTopRight from './icons/ArrowTopRight.astro';
+import Github from './icons/Github.astro';
+
+
 interface Props {
   title: string;
   technologies: string[];
   description: string;
   imgUrl: string;
+  linkProject: string;
 }
-const { title, technologies, description, imgUrl } = Astro.props;
+const { title, technologies, description, imgUrl, linkProject } = Astro.props;
 ---
 
 <div class="flex flex-row my-36">
@@ -19,6 +24,14 @@ const { title, technologies, description, imgUrl } = Astro.props;
       }
     </ul>
     <p class="text-lightGray text-xl font-opensans">{description}</p>
+    <a href={linkProject} class="flex">
+      <p class="border border-darkGray text-dirtyWhite rounded-full p-4"> 
+        <Github />
+      </p>
+      <p class="border border-darkGray text-dirtyWhite rounded-full p-4 bg-dirtyWhite ml-[-20px]">
+        <ArrowTopRight />
+      </p>
+    </a>
   </div>
   <div class="size-3/5">
     <img 

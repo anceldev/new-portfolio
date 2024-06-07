@@ -8,34 +8,34 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<nav class="flex flex-row w-screen text-lightGray text-2xl font-opensans font-thin px-14 py-6">
-  <a href=`/${lang}` class="hover:text-dirtyWhite transition-all delay-150">
+<nav class="flex flex-row text-lightGray text-xl font-opensans font-thin py-6 px-0 mx-0">
+  <a href=`/${lang}` class="hover:text-dirtyWhite transition-all delay-150 ml-12">
     Ancel <br/>Guarayo
   </a>
 
-  <ul class="flex flex-row gap-20 flex-1 items-center justify-center text-lg">
+  <ul class="flex flex-row gap-14 flex-1 items-center justify-center text-lg">
     <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}/home/`}>
+      <a href={`/${lang}`}>
         {t("nav.home")}
       </a>
     </li>
     <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}/about/`}>
+      <a href={`/${lang}/#about`}>
         {t("nav.about")}
       </a>
     </li>
     <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}/projects/`}>
+      <a href={`/${lang}/#projects`}>
         {t("nav.projects")}
       </a>
     </li>
     <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}/contacts/`}>
+      <a href={`/${lang}/#contact`}>
         {t("nav.contact")}
       </a>
     </li>
   </ul>
-  <div class="flex flex-col">
+  <div class="flex flex-col mr-12">
     <a
       href="/es/"
       class={`hover:underline ${lang === "es" ? "text-dirtyWhite underline" : "text-lightGray hover:text-dirtyWhite transition delay-100"}`}

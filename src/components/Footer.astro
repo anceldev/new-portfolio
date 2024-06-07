@@ -8,7 +8,9 @@ const lang = getLangFromUrl(Astro.url);
 const text = content[lang];
 ---
 
-<footer class="px-40 mb-20">
+<footer
+  id="contact"
+  class="px-40 mb-20">
   <h1 class="text-dirtyWhite font-firacode text-xl lg:text-3xl text-right pr-40">
     {`.../${text.contact.title}...`}
   </h1>
@@ -26,7 +28,7 @@ const text = content[lang];
       </div>
     </div>
     <div class="size-2/5">
-      <div class=" flex flex-col border border-darkGray rounded-[30px] p-8 text-dirtyWhite text-2xl font-firacode space-y-8 font-thin">
+      <div class=" flex flex-col border border-darkGray rounded-[40px] p-8 text-dirtyWhite text-2xl font-firacode space-y-8 font-thin">
         <a href={`tel:+34 ${text.contact.tel}`} class="hover:text-lightGray hover:underline transition-all delay-150">{text.contact.tel}</a>
         <a href={`mailto:${text.contact.mail}`} class="hover:text-lightGray hover:underline transition-all delay-150">{text.contact.mail}</a>
       </div>
