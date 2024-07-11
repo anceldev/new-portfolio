@@ -30,9 +30,22 @@ const lang = getLangFromUrl(Astro.url)
 		<Nav/>
 		<Header />
 		<About />
-		<!-- <Work /> -->
+		<Work />
 		<Projects />
 		<slot/>
 		<Footer/>
 	</body>
 </html>
+
+<style>
+	html {
+		font-family: 'Onest Variable', system-ui, sans-serif;
+		scroll-behavior: smooth;
+		transition-duration: 5s; 
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+</style>
