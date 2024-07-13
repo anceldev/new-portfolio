@@ -8,43 +8,73 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<nav class="flex flex-row text-lightGray text-xl font-opensans font-thin py-6 px-0 mx-0">
-  <a href=`/${lang}` class="hover:text-dirtyWhite transition-all delay-150 ml-12">
-    Ancel <br/>Guarayo
+<nav
+  class="flex justify-between flex-row text-lightGray text-xl font-opensans font-thin py-6 px-0 mx-0"
+>
+  <a
+    href=`/${lang}`
+    class="hover:text-dirtyWhite transition-all delay-150 text-lg lg:text-xl ml-8 lg:ml-12"
+  >
+    Ancel <br />Guarayo
+  </a>
+  <a id="menu-button" href="#" class="lg:hidden mr-8 space-y-[6px] group">
+    <div class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
+    <div class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
+    <div class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
   </a>
 
-  <ul class="flex flex-row gap-14 flex-1 items-center justify-center text-lg">
-    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}`}>
-        {t("nav.home")}
-      </a>
-    </li>
-    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}/#about`}>
-        {t("nav.about")}
-      </a>
-    </li>
-    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}/#projects`}>
-        {t("nav.projects")}
-      </a>
-    </li>
-    <li class="hover:text-dirtyWhite hover:underline transition-all delay-150">
-      <a href={`/${lang}/#contact`}>
-        {t("nav.contact")}
-      </a>
-    </li>
-  </ul>
-  <div class="flex flex-col mr-12">
-    <a
-      href="/es/"
-      class={`hover:underline ${lang === "es" ? "text-dirtyWhite underline" : "text-lightGray hover:text-dirtyWhite transition delay-100"}`}
-      >ES</a
-    >
-    <a
-      href="/en/"
-      class={`hover:underline ${lang === "en" ? "text-dirtyWhite underline" : "text-lightGray hover:text-dirtyWhite transition delay-100"}`}
-      >EN</a
-    >
+  <div class="hidden lg:flex w-1/2 right-0 lg:w-full absolute top-24 lg:static bg-dirtyWhite lg:bg-blackBg" id="menu-open">
+    <ul class="flex flex-col lg:flex-row lg:gap-14 flex-1 items-end lg:mr-0 lg:items-center justify-center text-lg">
+      <li
+        class="hover:text-blackBg hover:font-normal lg:hover:text-dirtyWhite lg:hover:font-light hover:underline transition-all delay-150 px-8 py-4 lg:p-0"
+      >
+        <a href={`/${lang}`}>
+          {t("nav.home")}
+        </a>
+      </li>
+      <li
+        class="hover:text-blackBg hover:font-normal lg:hover:text-dirtyWhite lg:hover:font-light hover:underline transition-all delay-150 px-8 py-4 lg:p-0"
+      >
+        <a href={`/${lang}/#about`}>
+          {t("nav.about")}
+        </a>
+      </li>
+      <li
+        class="hover:text-blackBg hover:font-normal lg:hover:text-dirtyWhite lg:hover:font-light hover:underline transition-all delay-150 px-8 py-4 lg:p-0"
+      >
+        <a href={`/${lang}/#projects`}>
+          {t("nav.projects")}
+        </a>
+      </li>
+      <li
+        class="hover:text-blackBg hover:font-normal lg:hover:text-dirtyWhite lg:hover:font-light hover:underline transition-all delay-150 px-8 py-4 lg:p-0"
+      >
+        <a href={`/${lang}/#contact`}>
+          {t("nav.contact")}
+        </a>
+      </li>
+    </ul>
+    <div class="flex flex-row justify-end lg:flex-col py-4 lg:p-0 mr-8 lg:mr-12">
+      <a
+        href="/es/"
+        class={`hover:underline ${lang === "es" ? "text-blackBg lg:text-dirtyWhite underline" : "text-lightGray hover:text-dirtyWhite transition delay-100"}`}
+        >ES</a
+      >
+      <p class="lg:hidden">/</p>
+      <a
+        href="/en/"
+        class={`hover:underline ${lang === "en" ? "text-blackBg lg:text-dirtyWhite underline" : "text-lightGray hover:text-dirtyWhite transition delay-100"}`}
+        >EN</a
+      >
+    </div>
   </div>
 </nav>
+<script>
+  const button = document.querySelector("#menu-button") as Element;
+  const menuOpen = document.querySelector("#menu-open") as Element;
+
+  button?.addEventListener("click", () => {
+    console.log("clicked...");
+    menuOpen.classList.toggle("hidden");
+  });
+</script>
