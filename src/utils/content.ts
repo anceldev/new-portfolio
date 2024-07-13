@@ -1,3 +1,4 @@
+
 export const content = {
   en: {
     header: {
@@ -59,7 +60,7 @@ export const content = {
             'Firebase',
           ],
           description: 'Expense Tracker is an application that will help you take better control of your finances. With it you can manage all your expenses in a more detailed way by adding categories and even attaching their receipt.',
-          imgUrl: './public/project1.png',
+          imgUrl: './project1.png',
           linkProject: 'https://github.com/anceldev/ExpenseTracker',
         },
         {
@@ -72,7 +73,7 @@ export const content = {
             'iOS',
           ],
           description: 'Kana Master is an iOS application designed for learning Katakana and Hiragana. It includes various tests and practical exercises that help in learning and memorizing Japanese characters.\n\nThe app also offers audio training for correct pronunciation and demonstrates how to propery draw each character.',
-          imgUrl: './public/project2.png',
+          imgUrl: './project2.png',
           linkProject: '',
         },
         {
@@ -86,7 +87,7 @@ export const content = {
             'gocron',
           ],
           description: 'Hey, anime fans! Struggling to track new episodes? Anime Alert Bot is your solution. Get auto-notifications for new episode releases!\n\nHot It Works:\n* Send the bot your anime linek.\n* Get release schdules instantly. Skip searching the web or social media.\n* Every 30 mins, the bot checks for new episodes using a cron schedule. Be the first to know about voice or subtitle updates!.\n\nConnect now and neves miss an episode!',
-          imgUrl: '/project/project3.png',
+          imgUrl: '/project3.png',
           linkProject: '',
         },
       ],
@@ -106,7 +107,7 @@ export const content = {
     },
     about: {
       title: 'Sobre mi',
-      description: 'Hola! Me llamo Ancel, Soy desarrollador de aplicaciones móviles. Más de 2 años de experiencia.',
+      description: '<p class="text-lightGray text-xl font-light font-opensans lg:text-2xl lg:size-1/2">Hola! Me llamo Ancel, Soy <span class="text-dirtyWhite italic">desarrollador de aplicaciones móviles</span>. Más de <span class="text-dirtyWhite italic">2 años</span> de experiencia.</p>',
     },
     work: {
       title: 'Experiencia',
@@ -156,8 +157,8 @@ export const content = {
             'SwiftUI',
             'Firebase',
           ],
-          description: 'Expense Tracker es una aplicación que te ayudará a llevar un control más ordenador acerca de tus finanzas. Con ella podrás gestionar todos tus gastos de una manera más detallada añadiendo categorías e incluso adjuntando el recibo de los mismos.',
-          imgUrl: './public/project1.png',
+          description: '<p><i class="text-dirtyWhite">Expense Tracker</i> es una aplicación para llevar un control más ordenador acerca de tus finanzas. Con ella podrás <i class="text-dirtyWhite">gestionar todos tus gastos</i> de una manera más detallada añadiendo categorías, <i class="text-dirtyWhite">subscripciones activas</i> e incluso adjuntar el recibo de cada uno de ellos.</p>',
+          imgUrl: './project1.png',
           linkProject: 'https://github.com/anceldev/ExpenseTracker',
         },
         {
@@ -167,8 +168,8 @@ export const content = {
             'SwiftUI',
             'Firebase',
           ],
-          description: 'Movix es una aplicación de streaming en la que podrás ver tus películas y series favoritas. Ademas, podrás compartir esa experiencia con la persona que quieras.',
-          imgUrl: './public/project2.png',
+          description: '<p><i class="text-dirtyWhite">Movix</i> es una aplicación de streaming en la que podrás ver tus películas y series favoritas. Ademas, podrás compartir esa experiencia con la persona que quieras. Movix utiliza la <i class="text-dirtyWhite">API de The Movie DB.</i></p>',
+          imgUrl: './project2.png',
           linkProject: 'https://github.com/anceldev/Movix',
         },
         {
@@ -179,36 +180,9 @@ export const content = {
             'Appwrite',
             'Tailwind CSS',
           ],
-          description: 'La Roca Manager es una aplicación web utilizada para la gestión y control de usuarios dentro de una organización. A través de la misma se puede controlar las formaciones que realizan los usuarios, llevar un historial de sus acciones y almacenar sus datos.',
-          imgUrl: './public/project3.png',
+          description: '<p><i class="text-dirtyWhite">La Roca Manager</i> es una aplicación web utilizada para la <i class="text-dirtyWhite">gestión y control de usuarios</i> dentro de una organización. A través de la misma se puede controlar las formaciones que realizan los usuarios, llevar un historial de sus acciones y almacenar sus datos.</p>',
+          imgUrl: './project3.png',
           linkProject: 'https://github.com/anceldev/larocacyl-manager',
-        },
-        {
-          title: 'Kana Master',
-          technologies: [
-            'Typescript',
-            'ReactNative',
-            'Redux Toolkit',
-            'i18n',
-            'iOS',
-          ],
-          description: 'Kana Master es una aplicación para iOS diseñada para aprender Katakana e Hiragana. Incluye varias pruebas y ejercicios prácticos que ayudan a aprender y memorizar los caracteres japoneses.\n\nLa aplicación también ofrece entrenamiento de audio para la pronunciación correcta y demuestra cómo dibujar correctamente cada carácter.',
-          imgUrl: './public/project2.png',
-          linkProject: '',
-        },
-        {
-          title: 'Anime Sentry',
-          technologies: [
-            'Golang',
-            'GORM',
-            'PostgreSQL',
-            'i18n',
-            'goquery',
-            'gocron',
-          ],
-          description: `¡Hola, fanáticos del anime! ¿Tienes problemas para seguir nuevos episodios? Anime Alert Bot es tu solución. ¡Recibe notificaciones automáticas para los lanzamientos de nuevos episodios!\n\nHot It Works:\n\n* Envía al robot tu línea de anime.\n\n* Obtén los horarios de lanzamiento al instante. Evite buscar en la web o en las redes sociales.\n* Cada 30 minutos, el bot busca nuevos episodios mediante una programación cron. ¡Sé el primero en enterarte de las actualizaciones de voz o subtítulos!.\n\n¡Conéctate ahora y nunca te perderás un episodio!`,
-          imgUrl: '/public/project3.png',
-          linkProject: '',
         },
       ],
     },

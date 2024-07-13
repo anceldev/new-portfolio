@@ -9,21 +9,26 @@ interface Props {
   description: string;
   imgUrl: string;
   linkProject: string;
+  index: number;
 }
-const { title, technologies, description, imgUrl, linkProject } = Astro.props;
+const { title, technologies, description, imgUrl, linkProject, index } = Astro.props;
+const showOnLeft = (index % 2) === 0
 ---
 
-<div class="flex flex-row my-36">
-  <div class="size-2/5 space-y-6">
+<div class="flex flex-col lg:flex-row my-10 lg:my-28">
+  <div class={showOnLeft ? `w-full lg:w-2/5 space-y-6` : 'hidden' }>
     <h1 class="text-dirtyWhite text-3xl font-firacode font-light">{title}</h1>
     <ul class="flex flex-wrap">
       {
         technologies.map((tech) => (
-          <li class="border w-min rounded-full lg:w-auto py-2 px-3 border-darkGray text-dirtyWhite mx-2 my-2 text-sm font-light font-firacode">{tech}</li>
+          <li class="border rounded-full lg:w-auto py-2 px-3 border-darkGray text-dirtyWhite mx-2 my-2 text-sm font-light font-firacode">{tech}</li>
         ))
       }
     </ul>
-    <p class="text-lightGray text-xl font-opensans">{description}</p>
+    <div class="text-lightGray text-xl font-opensans">
+      <p set:html={description}/>
+    </div>
+     
     <a href={linkProject} class="flex">
       <p class="border border-darkGray text-dirtyWhite rounded-full p-4"> 
         <Github />
@@ -33,10 +38,32 @@ const { title, technologies, description, imgUrl, linkProject } = Astro.props;
       </p>
     </a>
   </div>
-  <div class="size-3/5">
+  <div class="w-full lg:w-3/5">
     <img 
     src={`../../public/images/${imgUrl}`} 
     alt="project image" 
-    class="p-12">
+    class="px-0 py-8 lg:p-12">
   </div>
+  <div class={showOnLeft ? 'hidden' : `w-full lg:w-2/5 space-y-6`}>
+    <h1 class="text-dirtyWhite text-3xl font-firacode font-light">{title}</h1>
+    <ul class="flex flex-wrap">
+      {
+        technologies.map((tech) => (
+          <li class="border w-min rounded-full lg:w-auto py-2 px-3 border-darkGray text-dirtyWhite mx-2 my-2 text-sm font-light font-firacode">{tech}</li>
+        ))
+      }
+    </ul>
+    <div class="text-lightGray text-xl font-opensans">
+      <p set:html={description}/>
+    </div>
+    <a href={linkProject} class="flex">
+      <p class="border border-darkGray text-dirtyWhite rounded-full p-4"> 
+        <Github />
+      </p>
+      <p class="border border-darkGray text-dirtyWhite rounded-full p-4 bg-dirtyWhite ml-[-20px]">
+        <ArrowTopRight />
+      </p>
+    </a>
+  </div>
+  
 </div>

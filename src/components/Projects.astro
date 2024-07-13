@@ -13,7 +13,7 @@ const text = content[lang]
   <ul>
 
     {
-      text.projects.items.map((project) => (
+      text.projects.items.map((project, index) => (
         <li>
           <ProjectItem 
           title={project.title} 
@@ -21,6 +21,7 @@ const text = content[lang]
           description={project.description} 
           imgUrl={project.imgUrl}
           linkProject={project.linkProject}
+          index={index}
           />
         </li>
         ))  
