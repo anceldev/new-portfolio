@@ -158,7 +158,7 @@ export const content = {
             'Firebase',
           ],
           description: '<p><i class="text-dirtyWhite">Expense Tracker</i> es una aplicación para llevar un control más ordenador acerca de tus finanzas. Con ella podrás <i class="text-dirtyWhite">gestionar todos tus gastos</i> de una manera más detallada añadiendo categorías, <i class="text-dirtyWhite">subscripciones activas</i> e incluso adjuntar el recibo de cada uno de ellos.</p>',
-          imgUrl: './public/images/project1.png',
+          imgUrl: '../public/images/project1.png',
           linkProject: 'https://github.com/anceldev/ExpenseTracker',
         },
         {
