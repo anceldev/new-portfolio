@@ -158,7 +158,7 @@ export const content = {
             'Firebase',
           ],
           description: '<p><i class="text-dirtyWhite">Expense Tracker</i> es una aplicación para llevar un control más ordenador acerca de tus finanzas. Con ella podrás <i class="text-dirtyWhite">gestionar todos tus gastos</i> de una manera más detallada añadiendo categorías, <i class="text-dirtyWhite">subscripciones activas</i> e incluso adjuntar el recibo de cada uno de ellos.</p>',
-          imgUrl: '../public/images/project1.png',
+          imgUrl: '/images/project1.png',
           linkProject: 'https://github.com/anceldev/ExpenseTracker',
         },
         {
@@ -169,7 +169,7 @@ export const content = {
             'Firebase',
           ],
           description: '<p><i class="text-dirtyWhite">Movix</i> es una aplicación de streaming en la que podrás ver tus películas y series favoritas. Ademas, podrás compartir esa experiencia con la persona que quieras. Movix utiliza la <i class="text-dirtyWhite">API de The Movie DB.</i></p>',
-          imgUrl: './project2.png',
+          imgUrl: '/images/project2.png',
           linkProject: 'https://github.com/anceldev/Movix',
         },
         {
@@ -181,7 +181,7 @@ export const content = {
             'Tailwind CSS',
           ],
           description: '<p><i class="text-dirtyWhite">La Roca Manager</i> es una aplicación web utilizada para la <i class="text-dirtyWhite">gestión y control de usuarios</i> dentro de una organización. A través de la misma se puede controlar las formaciones que realizan los usuarios, llevar un historial de sus acciones y almacenar sus datos.</p>',
-          imgUrl: './project3.png',
+          imgUrl: '/images/project3.png',
           linkProject: 'https://github.com/anceldev/larocacyl-manager',
         },
       ],
