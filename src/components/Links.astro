@@ -25,8 +25,8 @@ const LINKS = [
   <ul class="flex flex-row flex-wrap gap-4 lg:gap-12 text-lightGray">
     {
       LINKS.map((link) => (
-        <li class="rounded-full border w-min lg:w-auto py-3 px-5 border-darkGray">
-          <a href={link.link} class="flex flex-row gap-2 italic font-light hover:text-dirtyWhite transition delay-150">
+        <li class="rounded-full border w-min lg:w-auto py-3 px-5 border-darkGray hover:border-dirtyWhite hover:text-dirtyWhite transition-all delay-150">
+          <a href={link.link} class="flex flex-row gap-2 italic font-light transition delay-150">
             <link.icon class="text-dirtyWhite" />
             {link.name}
           </a>

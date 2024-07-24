@@ -18,9 +18,9 @@ const t = useTranslations(lang);
     Ancel <br />Guarayo
   </a>
   <a id="menu-button" href="#" class="lg:hidden mr-8 space-y-[6px] group">
-    <div class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
-    <div class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
-    <div class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
+    <div id="menu-bar1" class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
+    <div id="menu-bar2" class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
+    <div id="menu-bar3" class="w-9 h-[3px] bg-lightGray group-hover:bg-dirtyWhite transition-all delay-150"></div>
   </a>
 
   <div class="hidden lg:flex w-1/2 right-0 lg:w-full absolute top-24 lg:static bg-dirtyWhite lg:bg-blackBg" id="menu-open">
@@ -74,7 +74,29 @@ const t = useTranslations(lang);
   const menuOpen = document.querySelector("#menu-open") as Element;
 
   button?.addEventListener("click", () => {
-    console.log("clicked...");
-    menuOpen.classList.toggle("hidden");
+    // console.log("clicked...");
+    // menuOpen.classList.toggle("hidden");
+    const bar1 = document.querySelector("#menu-bar1")
+    const bar2 = document.querySelector("#menu-bar2")
+    const bar3 = document.querySelector("#menu-bar3")
+
+    if(menuOpen.classList.contains('hidden')) {
+      bar1?.classList.add('hidden')
+      
+      bar2?.classList.add('rotate-45')
+      bar2?.classList.add('absolute')
+      
+      bar3?.classList.add('-rotate-45')
+
+      menuOpen.classList.add('flex')
+      menuOpen.classList.add('flex-col')
+      menuOpen.classList.remove('hidden')
+    } else {
+      bar2?.classList.remove('rotate-45')
+      bar2?.classList.remove('absolute')
+      bar3?.classList.remove('-rotate-45')
+      bar1?.classList.remove('hidden')
+      menuOpen.classList.add('hidden')
+    }
   });
 </script>

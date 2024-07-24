@@ -1,0 +1,16 @@
+---
+import ArrowTopRight from './icons/ArrowTopRight.astro';
+import Github from './icons/Github.astro';
+interface Props {
+  href: string;
+}
+const { href } = Astro.props
+---
+<a href={href} class="flex">
+  <p class="border border-darkGray text-dirtyWhite rounded-full p-4"> 
+    <Github />
+  </p>
+  <p class="border border-darkGray text-dirtyWhite rounded-full p-4 bg-dirtyWhite ml-[-20px]">
+    <ArrowTopRight />
+  </p>
+</a>

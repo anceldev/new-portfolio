@@ -1,8 +1,10 @@
+import { TECHS } from "../components/Projects.astro";
+
 
 export const content = {
   en: {
     header: {
-      title1: 'Mobile',
+      title1: 'iOS & Web',
       title2: 'Developer',
       button: 'Projects',
       description: 'My goal is to write maintainable, clean and undestandable code to process development was enjoyable'
@@ -101,7 +103,7 @@ export const content = {
   es: {
     header: {
       title1: 'Desarrollador',
-      title2: 'Móvil',
+      title2: 'iOS & Web',
       button: 'Proyectos',
       description: `Mi objetivo es escribir código limpio, mantenible y entendible para el proceso de desarrollo.`
     },
@@ -146,46 +148,40 @@ export const content = {
         duration: '4 years 9 months'
       },
     },
-    projects: {
-      title: 'Proyectos',
-      items: [
-        {
-          title: 'Expense Tracker',
-          technologies: [
-            'Swift',
-            'SwiftData',
-            'SwiftUI',
-            'Firebase',
-          ],
-          description: '<p><i class="text-dirtyWhite">Expense Tracker</i> es una aplicación para llevar un control más ordenador acerca de tus finanzas. Con ella podrás <i class="text-dirtyWhite">gestionar todos tus gastos</i> de una manera más detallada añadiendo categorías, <i class="text-dirtyWhite">subscripciones activas</i> e incluso adjuntar el recibo de cada uno de ellos.</p>',
-          imgUrl: '/images/project1.png',
-          linkProject: 'https://github.com/anceldev/ExpenseTracker',
-        },
-        {
-          title: 'Movix',
-          technologies: [
-            'Swift',
-            'SwiftUI',
-            'Firebase',
-          ],
-          description: '<p><i class="text-dirtyWhite">Movix</i> es una aplicación de streaming en la que podrás ver tus películas y series favoritas. Ademas, podrás compartir esa experiencia con la persona que quieras. Movix utiliza la <i class="text-dirtyWhite">API de The Movie DB.</i></p>',
-          imgUrl: '/images/project2.png',
-          linkProject: 'https://github.com/anceldev/Movix',
-        },
-        {
-          title: 'La Roca Manager',
-          technologies: [
-            'Typescript',
-            'React',
-            'Appwrite',
-            'Tailwind CSS',
-          ],
-          description: '<p><i class="text-dirtyWhite">La Roca Manager</i> es una aplicación web utilizada para la <i class="text-dirtyWhite">gestión y control de usuarios</i> dentro de una organización. A través de la misma se puede controlar las formaciones que realizan los usuarios, llevar un historial de sus acciones y almacenar sus datos.</p>',
-          imgUrl: '/images/project3.png',
-          linkProject: 'https://github.com/anceldev/larocacyl-manager',
-        },
-      ],
-    },
+    projects: "Proyectos",
+    // projects: {
+    //   title: 'Proyectos',
+    //   items: [
+    //     {
+    //       title: 'Expense Tracker',
+    //       technologies: [
+    //         TECHS.SWIFT,
+    //         TECHS.SWIFTDATA,
+    //         TECHS.SWIFTUI,
+    //         TECHS.FIREBASE,
+    //       ],
+    //       description: '<p><i class="text-dirtyWhite">Expense Tracker</i> es una aplicación para llevar un control más ordenador acerca de tus finanzas. Con ella podrás <i class="text-dirtyWhite">gestionar todos tus gastos</i> de una manera más detallada añadiendo categorías, <i class="text-dirtyWhite">subscripciones activas</i> e incluso adjuntar el recibo de cada uno de ellos.</p>',
+    //       imgUrl: '/images/project1.png',
+    //       linkProject: 'https://github.com/anceldev/ExpenseTracker',
+    //     },
+    //     {
+    //       title: 'Movix',
+    //       technologies: [
+    //       ],
+    //       description: '<p><i class="text-dirtyWhite">Movix</i> es una aplicación de streaming en la que podrás ver tus películas y series favoritas. Ademas, podrás compartir esa experiencia con la persona que quieras. Movix utiliza la <i class="text-dirtyWhite">API de The Movie DB.</i></p>',
+    //       imgUrl: '/images/project2.png',
+    //       linkProject: 'https://github.com/anceldev/Movix',
+    //     },
+    //     {
+    //       title: 'La Roca Manager',
+    //       technologies: [
+    //       ],
+    //       description: '<p><i class="text-dirtyWhite">La Roca Manager</i> es una aplicación web utilizada para la <i class="text-dirtyWhite">gestión y control de usuarios</i> dentro de una organización. A través de la misma se puede controlar las formaciones que realizan los usuarios, llevar un historial de sus acciones y almacenar sus datos.</p>',
+    //       imgUrl: '/images/project3.png',
+    //       linkProject: 'https://github.com/anceldev/larocacyl-manager',
+    //     },
+    //   ],
+    // },
     contact: {
       title: 'Contacto',
       tel: '698 578 578',

@@ -1,37 +1,86 @@
 ---
 import { getLangFromUrl } from "../i18n/utils";
 import { content } from "../utils/content";
-import '@fontsource-variable/fira-code';
-import '@fontsource-variable/open-sans';
+import "@fontsource-variable/fira-code";
+import "@fontsource-variable/open-sans";
 import Links from "./Links.astro";
 import RightArrow from "./icons/RightArrow.astro";
 
 const lang = getLangFromUrl(Astro.url);
-const text = content[lang]
-
+const text = content[lang];
 ---
-<div class={`py-28 ${lang === 'es' ? 'lg:w-[1050px]' : 'lg:w-[1000px]'} mx-8  lg:mx-auto space-y-8`}>
-  <div class="flex flex-col lg:flex-row  justify-between lg:items-center">
-    <h1 class="font-firacode text-5xl font-semibold text-dirtyWhite lg:text-8xl">
-      {text.header.title1}
+
+<div
+  class={`py-10 lg:py-28 ${lang === "es" ? "lg:w-[1050px]" : "lg:w-[1000px]"} mx-8  lg:mx-auto space-y-8`}
+>
+  <div>
+    <div class="flex justify-between min-h-[128px] items-end">
+      <h1
+        class={`${lang === "es" ? "text-4xl lg:text-7xl font-semibold" : "text-7xl lg:text-9xl font-bold"} font-firacode text-dirtyWhite`}
+      >
+        {text.header.title1}
+      </h1>
+      <a
+        href="#projects"
+        class="hidden lg:flex items-center px-10 h-[55px] bg-dirtyWhite rounded-full italic text-lg hover:text-base font-light hover:opacity-50 transition-all delay-200"
+      >
+        <p>{text.header.button}</p>
+        <RightArrow />
+      </a>
+    </div>
+    <div class="flex justify-between min-h-[128px] pt-4 lg:pt-7">
+      <h1
+        class=`${lang === 'es' ? 'text-6xl lg:text-9xl font-bold' : 'text-5xl lg:text-8xl font-semibold'} font-firacode text-dirtyWhite`
+      >
+        {text.header.title2}
+      </h1>
+      <p
+        class="hidden lg:block font-opensans text-lightGray text-xl pb-8 lg:min-w-[200px] lg:max-w-[300px] font-light items-center text-right"
+      >
+        {text.header.description}
+      </p>
+    </div>
+    <div class="flex flex-col lg:hidden w-full">
+      <p
+        class="font-opensans text-lightGray text-xl pb-8 lg:min-w-[200px] lg:max-w-[300px] font-light items-center text-center"
+      >
+        {text.header.description}
+      </p>
+      <a
+        href="#projects"
+        class="flex flex-row align-middle px-8 w-[180px] items-center h-[55px] bg-dirtyWhite rounded-full italic text-lg hover:text-base font-light hover:opacity-50 transition-all delay-200"
+      >
+        <p>{text.header.button}</p>
+        <RightArrow />
+      </a>
+    </div>
+  </div>
+  <!-- <div class="flex flex-col lg:flex-row  justify-between lg:items-center">
+    <h1 
+    class={`${lang === 'es' ? 'text-7xl' : 'text-9xl'} font-firacode font-semibold text-dirtyWhite`}>
+    {text.header.title1}
     </h1>
-    <h1 class="text-right lg:pl-20 text-dirtyWhite font-semibold text-6xl lg:text-8xl font-firacode lg:hidden">
-      {text.header.title2}
+    
+    <h1 
+    class={`${lang === 'es' ? 'text-9xl' : 'text-5xl'} text-right text-dirtyWhite font-semibold px-20 font-firacode lg:hidden`}
+    >
+    {text.header.title2}
     </h1>
+
     <a href="#projects" class="hidden lg:flex items-center px-20 h-[55px] bg-dirtyWhite rounded-full italic text-2xl font-light">
       <p>{text.header.button}</p>
       <RightArrow />
     </a>
   </div>
   <div class="flex flex-col lg:flex-row lg:items-center">
-    <p class="font-opensans text-lightGray text-xl pb-8 lg:w-[400px] font-light items-center">
+    <p class="font-opensans text-lightGray text-xl pb-8 lg:min-w-[200px] lg:max-w-[250px] font-light items-center">
       {text.header.description}
     </p>
     <a href="#projects" class="flex items-center w-[250px] px-20 h-[55px] bg-dirtyWhite rounded-full lg:hidden italic text-2xl font-light">
       <p>{text.header.button}</p>
       <RightArrow />
     </a>
-    <h1 class="hidden pl-20 text-dirtyWhite font-semibold text-8xl font-firacode lg:block">{text.header.title2}</h1>
-  </div>
+    <h1 class={`${lang === 'es' ? 'text-9xl' : 'text-8xl' } hidden pl-20 text-dirtyWhite font-semibold font-firacode lg:block`}>{text.header.title2}</h1>
+  </div> -->
   <Links />
 </div>
