@@ -1,5 +1,3 @@
-import { TECHS } from "../components/Projects.astro";
-
 
 export const content = {
   en: {
@@ -46,54 +44,11 @@ export const content = {
         }
       ],
       footer: {
-        title: 'Experiencia laboral',
-        duration: '4 años 9 meses'
+        title: 'Work',
+        duration: '4 years 9 months'
       }
     },
-    projects: {
-      title: 'Projects',
-      items: [
-        {
-          title: 'Gostat',
-          technologies: [
-            'Swift',
-            'SwiftData',
-            'SwiftUI',
-            'Firebase',
-          ],
-          description: 'Expense Tracker is an application that will help you take better control of your finances. With it you can manage all your expenses in a more detailed way by adding categories and even attaching their receipt.',
-          imgUrl: './project1.png',
-          linkProject: 'https://github.com/anceldev/ExpenseTracker',
-        },
-        {
-          title: 'Kana Master',
-          technologies: [
-            'Typescript',
-            'ReactNative',
-            'Redux Toolkit',
-            'i18n',
-            'iOS',
-          ],
-          description: 'Kana Master is an iOS application designed for learning Katakana and Hiragana. It includes various tests and practical exercises that help in learning and memorizing Japanese characters.\n\nThe app also offers audio training for correct pronunciation and demonstrates how to propery draw each character.',
-          imgUrl: './project2.png',
-          linkProject: '',
-        },
-        {
-          title: 'Anime Sentry',
-          technologies: [
-            'Golang',
-            'GORM',
-            'PostgreSQL',
-            'i18n',
-            'goquery',
-            'gocron',
-          ],
-          description: 'Hey, anime fans! Struggling to track new episodes? Anime Alert Bot is your solution. Get auto-notifications for new episode releases!\n\nHot It Works:\n* Send the bot your anime linek.\n* Get release schdules instantly. Skip searching the web or social media.\n* Every 30 mins, the bot checks for new episodes using a cron schedule. Be the first to know about voice or subtitle updates!.\n\nConnect now and neves miss an episode!',
-          imgUrl: '/project3.png',
-          linkProject: '',
-        },
-      ],
-    },
+    projects: "Projects",
     contact: {
       title: 'Contacts',
       tel: '698 578 578',

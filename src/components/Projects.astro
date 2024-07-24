@@ -53,7 +53,7 @@ export const TECHS = {
 };
 const PROJECTS = {
   en: {
-    title: "Proyectos",
+    title: "Projects",
     items: [
       {
         title: "Expense Tracker",
@@ -64,7 +64,7 @@ const PROJECTS = {
           TECHS.FIREBASE,
         ],
         description:
-          '<p><i class="text-dirtyWhite">Expense Tracker</i> es una aplicación para llevar un control más ordenador acerca de tus finanzas. Con ella podrás <i class="text-dirtyWhite">gestionar todos tus gastos</i> de una manera más detallada añadiendo categorías, <i class="text-dirtyWhite">subscripciones activas</i> e incluso adjuntar el recibo de cada uno de ellos.</p>',
+          '<p class="leading-8 font-light"><i class="text-dirtyWhite">Expense Tracker</i> es una aplicación para llevar un control más ordenador acerca de tus finanzas. Con ella podrás <i class="text-dirtyWhite">gestionar todos tus gastos</i> de una manera más detallada añadiendo categorías, <i class="text-dirtyWhite">subscripciones activas</i> e incluso adjuntar el recibo de cada uno de ellos.</p>',
         imgUrl: "/images/project1.png",
         linkProject: "https://github.com/anceldev/ExpenseTracker",
       },
@@ -72,7 +72,7 @@ const PROJECTS = {
         title: "Movix",
         technologies: [],
         description:
-          '<p><i class="text-dirtyWhite">Movix</i> es una aplicación de streaming en la que podrás ver tus películas y series favoritas. Ademas, podrás compartir esa experiencia con la persona que quieras. Movix utiliza la <i class="text-dirtyWhite">API de The Movie DB.</i></p>',
+          '<p class="leading-8 font-light"><i class="text-dirtyWhite">Movix</i> es una aplicación de streaming en la que podrás ver tus películas y series favoritas. Ademas, podrás compartir esa experiencia con la persona que quieras. Movix utiliza la <i class="text-dirtyWhite">API de The Movie DB.</i></p>',
         imgUrl: "/images/project2.png",
         linkProject: "https://github.com/anceldev/Movix",
       },
@@ -80,7 +80,7 @@ const PROJECTS = {
         title: "La Roca Manager",
         technologies: [ TECHS.REACT, TECHS.TYPESCRIPT, TECHS.APPWRITE, TECHS.TAILWIND],
         description:
-          '<p><i class="text-dirtyWhite">La Roca Manager</i> es una aplicación web utilizada para la <i class="text-dirtyWhite">gestión y control de usuarios</i> dentro de una organización. A través de la misma se puede controlar las formaciones que realizan los usuarios, llevar un historial de sus acciones y almacenar sus datos.</p>',
+          '<p class="leading-8 font-light"><i class="text-dirtyWhite">La Roca Manager</i> es una aplicación web utilizada para la <i class="text-dirtyWhite">gestión y control de usuarios</i> dentro de una organización. A través de la misma se puede controlar las formaciones que realizan los usuarios, llevar un historial de sus acciones y almacenar sus datos.</p>',
         imgUrl: "/images/project3.png",
         linkProject: "https://github.com/anceldev/larocacyl-manager",
       },
@@ -140,7 +140,7 @@ const projects = PROJECTS[lang];
         <li>
           <div class="flex flex-col lg:flex-row my-10 lg:my-28">
             <div
-              class={index % 2 === 0 ? `w-full lg:w-2/5 space-y-6` : `hidden`}
+              class={index % 2 === 0 ? `w-full lg:w-2/5 space-y-6` : `lg:hidden`}
             >
               <h1 class="text-dirtyWhite text-3xl font-firacode font-light">
                 {project.title}
@@ -168,7 +168,7 @@ const projects = PROJECTS[lang];
               />
             </div>
             <div
-              class={index % 2 === 0 ? `hidden` : `w-full lg:w-2/5 space-y-6`}
+              class={index % 2 === 0 ? `hidden` : `hidden lg:flex lg:flex-col lg:w-2/5 space-y-6`}
             >
               <h1 class="text-dirtyWhite text-3xl font-firacode font-light">
                 {project.title}

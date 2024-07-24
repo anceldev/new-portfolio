@@ -3,9 +3,18 @@ import { getLangFromUrl } from "../i18n/utils";
 import { content } from "../utils/content";
 
 const lang = getLangFromUrl(Astro.url);
-const text = content[lang]
+const text = content[lang];
 ---
-<div id="about" class="flex flex-col lg:flex-row justify-between mx-8 lg:mx-40 space-y-8">
-  <h3 class="text-dirtyWhite font-firacode text-xl lg:text-3xl size-1/2">{`.../${text.about.title}...`}</h3>
-   <p class="text-lightGray text-xl font-opensans font-light leading-8" set:html={text.about.description} />
+
+<div
+  id="about"
+  class="flex flex-col lg:flex-row justify-between mx-8 lg:mx-40 space-y-8"
+>
+  <h3 class="text-dirtyWhite font-firacode text-xl lg:text-3xl size-1/2">
+    {`.../${text.about.title}...`}
+  </h3>
+  <p
+    class="text-lightGray text-xl font-opensans font-light leading-8"
+    set:html={text.about.description}
+  />
 </div>
