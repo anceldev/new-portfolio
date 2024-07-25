@@ -1,6 +1,5 @@
 ---
-import { getLangFromUrl } from "../i18n/utils";
-import { content } from "../utils/content";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import Appwrite from "../components/icons/Appwrite.astro";
 import React from "../components/icons/React.astro";
 import Swift from "../components/icons/Swift.astro";
@@ -123,8 +122,7 @@ const PROJECTS = {
 };
 
 const lang = getLangFromUrl(Astro.url);
-const text = content[lang];
-const projects = PROJECTS[lang];
+const t = useTranslations(lang)
 ---
 
 <div
@@ -132,11 +130,11 @@ const projects = PROJECTS[lang];
   class="flex flex-col justify-betwee my-8 mx-8 lg:mx-40 space-y-8"
 >
   <h3 class="text-dirtyWhite font-firacode text-xl lg:text-3xl size-1/2">
-    {`.../${text.projects}...`}
+    {`.../${t('projects.title')}...`}
   </h3>
   <ul>
     {
-      projects.items.map((project, index) => (
+      PROJECTS[lang].items.map((project, index) => (
         <li>
           <div class="flex flex-col lg:flex-row my-10 lg:my-28">
             <div
