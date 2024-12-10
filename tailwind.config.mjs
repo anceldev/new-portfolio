@@ -8,6 +8,8 @@ export default {
 			'dirtyWhite': '#f5f5f5',
 			'lightGray': '#A6A6A6',
 			'darkGray': '#3D3D3D',
+			'label': '#444',
+			'foreground': 'hsl(224, 71.4%, 4.1%)',
 		},
 		extend: {
 			fontFamily: {

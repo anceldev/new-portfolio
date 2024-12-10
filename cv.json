@@ -1,0 +1,244 @@
+{
+  "basics": {
+    "name": "Ancel Guarayo",
+    "label": "Desarrollador iOS Junior enfocado en realizar productos de calidad para los usuarios.",
+    "image": "/me-cv.webp",
+    "email": "aguarayo@gmail.com",
+    "phone": "+34 626655430",
+    "url": "https://anceldev.com",
+    "summary": "Desarrollador iOS Junior con experiencia relizando proyectos personales para dispositivos iOS. También cuento con experiencia en desarrollo de aplicaciones web utilizando React y Tailwind.",
+    "location": {
+      "address": "",
+      "postalCode": "47013",
+      "city": "Valladolid",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "anceldev",
+        "url": "https://linkedin.com/in/anceldev"
+      },
+      {
+        "network": "GitHub",
+        "username": "anceldev",
+        "url": "https://github.com/anceldev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "midudev",
+      "position": "Divulgador sobre Programación Web",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2021-01-01",
+      "endDate": null,
+      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Adevinta",
+      "position": "Lead Frontend Architect",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2016-06-01",
+      "endDate": "2022-09-01",
+      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Hubii",
+      "position": "Senior FrontEnd Developer",
+      "startDate": "2011-03-01",
+      "endDate": "2016-05-01",
+      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [{
+    "institution": "Universae",
+    "url": "https://universae.com/",
+    "area": "Desarrollo de aplicaciones Multiplataforma",
+    "studyType": "Grado Superior",
+    "startDate": "2022-09-01",
+    "endDate": "2024-02-03",
+    "score": "8.26",
+    "courses": [
+      "DAM"
+    ]
+  },{
+    "institution": "IES Ribera de Castilla",
+    "url": "http://iesriberadecastilla.centros.educa.jcyl.es/sitio/",
+    "area": "Desarrollo de Aplicaciones Web",
+    "studyType": "Grado Superior",
+    "startDate": "2024-10-01",
+    "endDate": "En curso",
+    "score": "",
+    "courses": [
+      "DAW"
+    ]
+  }
+],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+    {
+      "name": "Swift",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo iOS", "Frontend"
+      ]
+    },
+    {
+      "name": "SwiftUI",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo iOS", "Interface", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "SwiftData",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQLite", "Almacenamiento de Datos"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Appwrite",
+      "level": "Master",
+      "keywords": [
+        "Backend", "NoSQL"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Medium"
+    }
+  ],
+  "interests": [{
+    "name": "Sport",
+    "keywords": [
+      "Football",
+      "Tenis"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [
+    {
+      "name": "Expense tracker",
+      "isActive": true,
+      "description": "Aplicación desarrollada para lelvar a cabo un control más ordenado de las finanzas del usuario. Con ella puede controlar tanto lo pagos que recibe como las ganancias y categorizarlas según crea conveniente.",
+      "highlights": [
+        "Gestiona tus gastos",
+        "En desarrollo",
+        "Swift, SwiftUI & SwiftData"
+      ],
+      "url": "https://google.com"
+    },
+    {
+      "name": "Movix",
+      "isActive": true,
+      "description": "Aplicación que sirve de catálogo para buscar tus películas y/o series favoritas. A través de ella se puede acceder a diferente información sobre el contenido que se busca como la sinopsis, los actores que participan en ella o en qué plataformas está disponible según la región.",
+      "highlights": [
+        "Tus películas favoritas",
+        "Streaming",
+        "Swift & SwiftUI"
+      ],
+      "url": "https://google.com"
+    },
+    {
+      "name": "La Roca manager",
+      "isActive": true,
+      "description": "Aplicación web utilizada para la gestión y control de usuarios dentro de una organización. Con ella se llevan a cabo además controles de asistencia y formaciones a los diferentes usuarios.",
+      "highlights": [
+        "+2000 usuarios activos",
+        "Retos para cualquier lenguaje",
+        "Typescript, React & Appwrite"
+      ],
+      "url": "https://celulaslarocacyl.com"
+    },
+    {
+      "name": "Memories",
+      "isActive": true,
+      "description": "Aplicación creada para que los usuarios puedan guardar sus momentos favoritos para el recuerdo.",
+      "highlights": [
+        "Recuerdos",
+        "En desarrollo"
+      ],
+      "url": "https://google.com",
+      "github": "https://memories.com"
+    }
+  ]
+}

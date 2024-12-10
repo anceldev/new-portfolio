@@ -1,0 +1,26 @@
+---
+import { projects } from "@cv";
+import Section from "@/components/cv/Section.astro";
+---
+
+<Section title="Projects">
+  <h2 class="text-xl font-bold mt-8">Proyectos</h2>
+  <div class="flex flex-row flex-wrap gap-x-3 gap-y-3">
+    {
+      projects.map(({ name, isActive, description, highlights, url }) => {
+        return <div class="border w-[calc(50%-12px)] rounded-lg border-foreground/20 p-3">
+          <h4 class="font-semibold text-base">{name}</h4>
+          <p class="font-mono text-foreground/80 text-xs text-pretty">{description}</p>
+          <div class="flex flex-row flex-wrap gap-x-2 gap-y-1">
+          {highlights.map((highlight) => {
+            return (
+              <p class="px-2 py-1 bg-foreground/10 text-xs font-mono text-foreground font-medium rounded-md">{highlight}</p>  
+            )
+          })
+        }
+        </div>
+        </div>;
+      })
+    }
+  </div>
+</Section>

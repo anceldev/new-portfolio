@@ -1,0 +1,81 @@
+---
+import { basics } from "../../../cv.json";
+import Section from "@/components/cv/Section.astro";
+import Mail from "@/components/icons/Mail.astro";
+import Phone from "@/components/icons/Phone.astro";
+import LinkedInCV from "@/components/icons/LinkedInCV.astro";
+import GithubCV from "@/components/icons/GithubCV.astro";
+
+import World from "@/components/cv/World.astro";
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = basics.location;
+
+// const SOCIAL_ICONS: SocialIcon = {
+//   GithubCV,
+//   LinkedInCV,
+// };
+const linkedinInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedUrl = linkedinInfo?.url;
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" \u2022 ");
+---
+
+<Section>
+  <div class="flex flex-row justify-between">
+    <div class="max-w-md flex flex-col gap-2">
+      <h1 class="text-2xl font-bold">{name}</h1>
+      <h2
+        class="text-foreground/80 text-pretty font-mono text-sm print:text-[12px]"
+      >
+        {label}
+      </h2>
+      <span class="flex gap-1.5 text-xs text-foreground items-center">
+        <World />
+        <p class="font-mono">
+          {city}, {region}
+        </p>
+      </span>
+
+      <footer class="flex">
+        <div class="hidden print:flex gap-x-1.5 align-baseline leading-none text-xs font-mono">
+          {printInfo}
+        </div>
+        <div class="flex gap-1 pt-1 print:hidden">
+          {
+            email && (
+              <a
+                href={`mailto:${email}`}
+                title={`Enviar un correo electrónico al correo a ${name} al correo ${email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="p-2 rounded-md border border-foreground/10 hover:bg-foreground/5 transition-all"
+              >
+                <Mail />
+              </a>
+            )
+          }
+          {
+            phone && (
+              <a
+                href={`tel:${phone}`}
+                title={`Llamar por teléfono a ${name} al número ${email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="p-2 rounded-md border border-foreground/10 hover:bg-foreground/5 transition-all"
+              >
+                <Phone />
+              </a>
+            )
+          }
+          <!-- {
+            profiles.map(({ network, url, username }) => {
+              const Icon = SOCIAL_ICONS[network];
+            })
+          } -->
+        </div>
+      </footer>
+    </div>
+    <figure class="flex flex-col my-auto">
+      <img src={image} alt={name} class="rounded-xl size-28" />
+    </figure>
+  </div>
+</Section>
